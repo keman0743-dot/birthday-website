@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Hamza Sarwaer</title>
+    <style>
+        body { margin:0; padding:0; height:100vh; display:flex; justify-content:center; align-items:center; background: linear-gradient(135deg, #000,#fff,#c1121f); font-family:Arial, sans-serif; overflow:hidden; }
+        .card { background:#fff; padding:40px; border-radius:20px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.3); max-width:420px; z-index:2; }
+        h1 { color:#c1121f; margin-bottom:10px; }
+        h2 { color:#000; margin-bottom:20px; }
+        p { color:#333; font-size:16px; }
+        .emoji { font-size:40px; margin:15px 0; }
+        .balloon { position:absolute; bottom:-150px; width:60px; height:80px; border-radius:50%; animation:float 6s infinite ease-in; z-index:1; }
+        .balloon::after { content:''; position:absolute; top:80px; left:50%; width:2px; height:40px; background:#555; }
+        .b1 { left:10%; background:#000; animation-delay:0s; }
+        .b2 { left:30%; background:#555; animation-delay:1s; }
+        .b3 { left:60%; background:#777; animation-delay:2s; }
+        .b4 { left:80%; background:#999; animation-delay:3s; }
+        @keyframes float { 0% { transform:translateY(0); } 100% { transform:translateY(-120vh); } }
+    </style>
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundjay.com/human/sounds/happy-birthday-song-01.mp3" type="audio/mpeg">
+    </audio>
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <div class="card">
+        <div class="emoji">🎉🎂🎈</div>
+        <h1>Happy Birthday</h1>
+        <h2>Hamza Sarwaer</h2>
+        <p>May your life be filled with happiness, success, and beautiful moments.<br>Wishing you a wonderful year ahead!</p>
+    </div>
+</body>
+</html>
